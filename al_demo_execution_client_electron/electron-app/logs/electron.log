@@ -1,0 +1,112 @@
+2025-07-18T10:17:01.512Z info: Attempting to connect to Node server
+2025-07-18T10:17:01.541Z info: Connected to Node server
+2025-07-18T10:17:01.557Z info: Received message: {"type":"registration","clientId":"0c680afc-570e-454e-b41b-6be863c6268d"}
+2025-07-18T10:17:01.557Z info: Registered with ID: 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:17:57.167Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:17:57.168Z info: Running test case
+2025-07-18T10:18:00.479Z info: Test report saved locally
+2025-07-18T10:18:00.479Z info: Test report sent to Node server
+2025-07-18T10:18:00.480Z info: Local test report deleted
+2025-07-18T10:18:02.156Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:18:02.156Z info: Running test case
+2025-07-18T10:18:04.228Z info: Test report saved locally
+2025-07-18T10:18:04.228Z info: Test report sent to Node server
+2025-07-18T10:18:04.229Z info: Local test report deleted
+2025-07-18T10:22:31.259Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:22:31.259Z info: Running test case
+2025-07-18T10:22:34.423Z info: Test report saved locally
+2025-07-18T10:22:34.423Z info: Test report sent to Node server
+2025-07-18T10:22:34.424Z info: Local test report deleted
+2025-07-18T10:22:36.276Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:22:36.277Z info: Running test case
+2025-07-18T10:22:38.235Z info: Test report saved locally
+2025-07-18T10:22:38.236Z info: Test report sent to Node server
+2025-07-18T10:22:38.236Z info: Local test report deleted
+2025-07-18T10:26:03.894Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:26:03.895Z info: Running test case
+2025-07-18T10:26:06.816Z info: Test report saved locally
+2025-07-18T10:26:06.816Z info: Test report sent to Node server
+2025-07-18T10:26:06.817Z info: Local test report deleted
+2025-07-18T10:26:08.889Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:26:08.889Z info: Running test case
+2025-07-18T10:26:10.836Z info: Test report saved locally
+2025-07-18T10:26:10.836Z info: Test report sent to Node server
+2025-07-18T10:26:10.837Z info: Local test report deleted
+2025-07-18T10:28:46.647Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:28:46.648Z info: Running test case
+2025-07-18T10:28:49.271Z info: Test report saved locally
+2025-07-18T10:28:49.272Z info: Test report sent to Node server
+2025-07-18T10:28:49.273Z info: Local test report deleted
+2025-07-18T10:28:51.646Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:28:51.646Z info: Running test case
+2025-07-18T10:28:53.681Z info: Test report saved locally
+2025-07-18T10:28:53.682Z info: Test report sent to Node server
+2025-07-18T10:28:53.683Z info: Local test report deleted
+2025-07-18T10:31:33.448Z info: Disconnected from Node server
+2025-07-18T10:31:38.449Z info: Attempting to connect to Node server
+2025-07-18T10:31:38.457Z info: Connected to Node server
+2025-07-18T10:31:38.471Z info: Received message: {"type":"registration","clientId":"53b1b8b5-4df3-40b0-b8e9-03061d22cf8f"}
+2025-07-18T10:31:38.472Z info: Registered with ID: 53b1b8b5-4df3-40b0-b8e9-03061d22cf8f
+2025-07-18T10:31:45.897Z info: Attempting to connect to Node server
+2025-07-18T10:31:45.930Z info: Connected to Node server
+2025-07-18T10:31:45.953Z info: Received message: {"type":"registration","clientId":"3503ae6a-fa8d-490a-b561-4bb9504460c4"}
+2025-07-18T10:31:45.953Z info: Registered with ID: 3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18T10:33:01.833Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:33:01.834Z info: Running test case
+2025-07-18T10:33:06.839Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:33:06.839Z info: Running test case
+2025-07-18T10:33:10.329Z info: Test report saved locally
+2025-07-18T10:33:10.330Z info: Test report sent to Node server
+2025-07-18T10:33:10.331Z info: Local test report deleted
+2025-07-18T10:33:20.553Z info: Test report saved locally
+2025-07-18T10:33:20.554Z info: Test report sent to Node server
+2025-07-18T10:33:20.554Z info: Local test report deleted
+2025-07-18T10:35:26.239Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:35:26.240Z info: Running test case
+2025-07-18T10:35:31.236Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:35:31.237Z info: Running test case
+2025-07-18T10:35:34.649Z info: Test report saved locally
+2025-07-18T10:35:34.649Z info: Test report sent to Node server
+2025-07-18T10:35:34.651Z info: Local test report deleted
+2025-07-18T10:35:44.643Z info: Test report saved locally
+2025-07-18T10:35:44.644Z info: Test report sent to Node server
+2025-07-18T10:35:44.646Z info: Local test report deleted
+2025-07-18T10:38:10.176Z info: Disconnected from Node server
+2025-07-18T10:38:15.186Z info: Attempting to connect to Node server
+2025-07-18T10:38:15.204Z info: Connected to Node server
+2025-07-18T10:38:15.228Z info: Received message: {"type":"registration","clientId":"b5f79e20-67b5-42a6-a163-3fe3eaf1f9e2"}
+2025-07-18T10:38:15.229Z info: Registered with ID: b5f79e20-67b5-42a6-a163-3fe3eaf1f9e2
+2025-07-18T10:39:15.300Z info: Attempting to connect to Node server
+2025-07-18T10:39:15.333Z info: Connected to Node server
+2025-07-18T10:39:15.353Z info: Received message: {"type":"registration","clientId":"b8c4177f-4cbe-492a-b3f9-e67ec42edb5d"}
+2025-07-18T10:39:15.353Z info: Registered with ID: b8c4177f-4cbe-492a-b3f9-e67ec42edb5d
+2025-07-18T10:40:52.965Z info: Disconnected from Node server
+2025-07-18T10:41:29.057Z info: Attempting to connect to Node server
+2025-07-18T10:41:29.090Z info: Connected to Node server
+2025-07-18T10:41:29.108Z info: Received message: {"type":"registration","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4"}
+2025-07-18T10:41:29.108Z info: Registered with ID: c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18T10:42:08.275Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:42:08.276Z info: Running test case
+2025-07-18T10:42:13.279Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:42:13.280Z info: Running test case
+2025-07-18T10:42:16.725Z info: Test report saved locally
+2025-07-18T10:42:16.725Z info: Test report sent to Node server
+2025-07-18T10:42:16.726Z info: Local test report deleted
+2025-07-18T10:42:17.111Z info: Test report saved locally
+2025-07-18T10:42:17.112Z info: Test report sent to Node server
+2025-07-18T10:42:17.112Z info: Local test report deleted
+2025-07-18T11:56:17.907Z info: Received message: {"type":"run-test","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T11:56:17.908Z info: Running test case
+2025-07-18T11:56:22.911Z info: Received message: {"type":"run-test","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T11:56:22.911Z info: Running test case
+2025-07-18T11:56:26.596Z info: Test report saved locally
+2025-07-18T11:56:26.597Z info: Test report sent to Node server
+2025-07-18T11:56:26.598Z info: Local test report deleted
+2025-07-18T11:56:27.752Z info: Test report saved locally
+2025-07-18T11:56:27.752Z info: Test report sent to Node server
+2025-07-18T11:56:27.753Z info: Local test report deleted
+2025-07-18T11:56:59.479Z info: Attempting to connect to Node server
+2025-07-18T11:56:59.513Z info: Connected to Node server
+2025-07-18T11:56:59.528Z info: Received message: {"type":"registration","clientId":"c00c4414-9c9e-4015-b197-5c9b141e3099"}
+2025-07-18T11:56:59.529Z info: Registered with ID: c00c4414-9c9e-4015-b197-5c9b141e3099
+2025-07-18T12:54:29.756Z info: Disconnected from Node server

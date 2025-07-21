@@ -1,0 +1,263 @@
+2025-07-18 13:38:01,370 INFO: Websocket connected
+2025-07-18 13:38:01,370 INFO: Connected to Node server
+2025-07-18 13:38:01,370 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 13:38:01,370 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 13:47:45,010 INFO: 127.0.0.1 - - [18/Jul/2025 13:47:45] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 13:48:21,183 INFO: Websocket connected
+2025-07-18 13:48:21,183 INFO: Connected to Node server
+2025-07-18 13:48:21,183 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 13:48:21,183 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 13:48:46,051 INFO: 127.0.0.1 - - [18/Jul/2025 13:48:46] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 13:49:21,594 INFO: 127.0.0.1 - - [18/Jul/2025 13:49:21] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 13:51:39,189 INFO: Websocket connected
+2025-07-18 13:51:39,189 INFO: Connected to Node server
+2025-07-18 13:51:39,189 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 13:51:39,189 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 13:52:33,302 INFO: 127.0.0.1 - - [18/Jul/2025 13:52:33] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 13:52:33,558 INFO: Received execute request: browser=chrome, clientId=85c8862d-5e10-4422-8fc6-a11db0b1dfea
+2025-07-18 13:52:33,558 INFO: Sent test case test_google_search to Node server
+2025-07-18 13:52:36,767 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 13:52:36,769 INFO: Test report saved at reports/report_test_google_search_20250718_135236.json
+2025-07-18 13:52:38,570 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 13:52:40,960 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 13:52:40,961 INFO: Test report saved at reports/report_test_wikipedia_20250718_135240.json
+2025-07-18 13:52:43,585 INFO: 127.0.0.1 - - [18/Jul/2025 13:52:43] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:03:29,341 INFO: 127.0.0.1 - - [18/Jul/2025 14:03:29] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:03:29,616 INFO: Received execute request: browser=chrome, clientId=85c8862d-5e10-4422-8fc6-a11db0b1dfea
+2025-07-18 14:03:29,618 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:03:32,820 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 14:03:32,822 INFO: Test report saved at reports/report_test_google_search_20250718_140332.json
+2025-07-18 14:03:34,622 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:03:36,803 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 14:03:36,804 INFO: Test report saved at reports/report_test_wikipedia_20250718_140336.json
+2025-07-18 14:03:39,632 INFO: 127.0.0.1 - - [18/Jul/2025 14:03:39] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:04:21,248 INFO: 127.0.0.1 - - [18/Jul/2025 14:04:21] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:04:21,569 INFO: Received execute request: browser=chrome, clientId=85c8862d-5e10-4422-8fc6-a11db0b1dfea
+2025-07-18 14:04:21,570 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:04:24,780 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 14:04:24,782 INFO: Test report saved at reports/report_test_google_search_20250718_140424.json
+2025-07-18 14:04:26,578 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:04:28,599 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 14:04:28,600 INFO: Test report saved at reports/report_test_wikipedia_20250718_140428.json
+2025-07-18 14:04:31,591 INFO: 127.0.0.1 - - [18/Jul/2025 14:04:31] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:07:24,511 INFO: 127.0.0.1 - - [18/Jul/2025 14:07:24] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:07:24,782 INFO: Received execute request: browser=chrome, clientId=9469fcfd-f8ff-4635-b3d0-cb1c06aa70b1
+2025-07-18 14:07:24,785 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:07:24,818 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:07:24,822 INFO: Test report saved at reports/report_test_google_search_20250718_140724.json
+2025-07-18 14:07:29,793 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:07:29,811 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:07:29,811 INFO: Test report saved at reports/report_test_wikipedia_20250718_140729.json
+2025-07-18 14:07:34,802 INFO: 127.0.0.1 - - [18/Jul/2025 14:07:34] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:10:32,251 INFO: 127.0.0.1 - - [18/Jul/2025 14:10:32] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:10:32,515 INFO: Received execute request: browser=chrome, clientId=e615ca6a-c786-46d3-ac55-9a985a8e261f
+2025-07-18 14:10:32,515 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:10:32,568 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:10:32,570 INFO: Test report saved at reports/report_test_google_search_20250718_141032.json
+2025-07-18 14:10:37,535 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:10:37,570 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:10:37,570 INFO: Test report saved at reports/report_test_wikipedia_20250718_141037.json
+2025-07-18 14:10:42,547 INFO: 127.0.0.1 - - [18/Jul/2025 14:10:42] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:11:05,633 INFO: 127.0.0.1 - - [18/Jul/2025 14:11:05] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:11:05,960 INFO: Received execute request: browser=chrome, clientId=e615ca6a-c786-46d3-ac55-9a985a8e261f
+2025-07-18 14:11:05,962 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:11:05,987 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:11:05,989 INFO: Test report saved at reports/report_test_google_search_20250718_141105.json
+2025-07-18 14:11:10,976 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:11:10,998 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:11:10,998 INFO: Test report saved at reports/report_test_wikipedia_20250718_141110.json
+2025-07-18 14:11:15,985 INFO: 127.0.0.1 - - [18/Jul/2025 14:11:15] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:11:31,963 INFO: 127.0.0.1 - - [18/Jul/2025 14:11:31] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:11:32,301 INFO: Received execute request: browser=chrome, clientId=e615ca6a-c786-46d3-ac55-9a985a8e261f
+2025-07-18 14:11:32,301 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:11:32,316 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:11:32,317 INFO: Test report saved at reports/report_test_google_search_20250718_141132.json
+2025-07-18 14:11:37,307 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:11:37,318 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:11:37,318 INFO: Test report saved at reports/report_test_wikipedia_20250718_141137.json
+2025-07-18 14:11:38,203 INFO: 127.0.0.1 - - [18/Jul/2025 14:11:38] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:11:38,523 INFO: Received execute request: browser=chrome, clientId=e615ca6a-c786-46d3-ac55-9a985a8e261f
+2025-07-18 14:11:38,523 INFO: Sent test case test_google_search to Node server
+2025-07-18 14:11:38,539 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:11:38,540 INFO: Test report saved at reports/report_test_google_search_20250718_141138.json
+2025-07-18 14:11:43,528 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 14:11:43,534 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"not a chrome.ServiceBuilder object"}}
+2025-07-18 14:11:43,536 INFO: Test report saved at reports/report_test_wikipedia_20250718_141143.json
+2025-07-18 14:11:44,325 INFO: 127.0.0.1 - - [18/Jul/2025 14:11:44] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:11:48,538 INFO: 127.0.0.1 - - [18/Jul/2025 14:11:48] "POST /execute HTTP/1.1" 200 -
+2025-07-18 14:16:46,382 ERROR: WebSocket error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-18 14:16:46,382 ERROR: [WinError 10054] An existing connection was forcibly closed by the remote host - goodbye
+2025-07-18 14:16:46,382 INFO: WebSocket connection closed
+2025-07-18 14:17:12,716 INFO: 127.0.0.1 - - [18/Jul/2025 14:17:12] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 14:17:12,972 INFO: Received execute request: browser=chrome, clientId=863d7b16-d12c-4264-b9cf-b8e42c842831
+2025-07-18 14:17:12,988 ERROR: Exception on /execute [POST]
+Traceback (most recent call last):
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\app.py", line 102, in execute_tests
+    result = loop.run_until_complete(send_test_cases())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\app.py", line 87, in send_test_cases
+    ws.send(json.dumps({'type': 'test-case', 'clientId': client_id, 'testCase': test_case}))
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\websocket\_app.py", line 291, in send
+    raise WebSocketConnectionClosedException("Connection is already closed.")
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.
+2025-07-18 14:17:13,004 INFO: 127.0.0.1 - - [18/Jul/2025 14:17:13] "[35m[1mPOST /execute HTTP/1.1[0m" 500 -
+2025-07-18 15:47:09,775 INFO: Websocket connected
+2025-07-18 15:47:09,775 INFO: Connected to Node server
+2025-07-18 15:47:09,792 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 15:47:09,792 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 15:47:56,883 INFO: 127.0.0.1 - - [18/Jul/2025 15:47:56] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 15:47:57,136 INFO: Received execute request: browser=chrome, clientId=0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18 15:47:57,136 INFO: Sent test case test_google_search to Node server
+2025-07-18 15:48:00,490 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:48:00,491 INFO: Test report saved at reports/report_test_google_search_20250718_154800.json
+2025-07-18 15:48:02,140 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 15:48:04,241 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:48:04,242 INFO: Test report saved at reports/report_test_wikipedia_20250718_154804.json
+2025-07-18 15:48:07,145 INFO: 127.0.0.1 - - [18/Jul/2025 15:48:07] "POST /execute HTTP/1.1" 200 -
+2025-07-18 15:52:30,988 INFO: 127.0.0.1 - - [18/Jul/2025 15:52:30] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 15:52:31,242 INFO: Received execute request: browser=chrome, clientId=0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18 15:52:31,250 INFO: Sent test case test_google_search to Node server
+2025-07-18 15:52:34,432 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:52:34,433 INFO: Test report saved at reports/report_test_google_search_20250718_155234.json
+2025-07-18 15:52:36,260 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 15:52:38,246 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:52:38,247 INFO: Test report saved at reports/report_test_wikipedia_20250718_155238.json
+2025-07-18 15:52:41,265 INFO: 127.0.0.1 - - [18/Jul/2025 15:52:41] "POST /execute HTTP/1.1" 200 -
+2025-07-18 15:56:03,607 INFO: 127.0.0.1 - - [18/Jul/2025 15:56:03] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 15:56:03,873 INFO: Received execute request: browser=chrome, clientId=0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18 15:56:03,878 INFO: Sent test case test_google_search to Node server
+2025-07-18 15:56:06,823 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:56:06,825 INFO: Test report saved at reports/report_test_google_search_20250718_155606.json
+2025-07-18 15:56:08,888 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 15:56:10,838 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:56:10,839 INFO: Test report saved at reports/report_test_wikipedia_20250718_155610.json
+2025-07-18 15:56:13,894 INFO: 127.0.0.1 - - [18/Jul/2025 15:56:13] "POST /execute HTTP/1.1" 200 -
+2025-07-18 15:58:46,373 INFO: 127.0.0.1 - - [18/Jul/2025 15:58:46] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 15:58:46,631 INFO: Received execute request: browser=chrome, clientId=0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18 15:58:46,631 INFO: Sent test case test_google_search to Node server
+2025-07-18 15:58:49,275 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:58:49,276 INFO: Test report saved at reports/report_test_google_search_20250718_155849.json
+2025-07-18 15:58:51,644 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 15:58:53,684 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18 15:58:53,687 INFO: Test report saved at reports/report_test_wikipedia_20250718_155853.json
+2025-07-18 15:58:56,651 INFO: 127.0.0.1 - - [18/Jul/2025 15:58:56] "POST /execute HTTP/1.1" 200 -
+2025-07-18 16:01:33,445 ERROR: WebSocket error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-18 16:01:33,445 ERROR: [WinError 10054] An existing connection was forcibly closed by the remote host - goodbye
+2025-07-18 16:01:33,445 INFO: WebSocket connection closed
+2025-07-18 16:01:53,756 INFO: Websocket connected
+2025-07-18 16:01:53,756 INFO: Connected to Node server
+2025-07-18 16:01:53,772 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 16:01:53,772 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 16:03:01,551 INFO: 127.0.0.1 - - [18/Jul/2025 16:03:01] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 16:03:01,814 INFO: Received execute request: browser=chrome, clientId=3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18 16:03:01,814 INFO: Sent test case test_google_search to Node server
+2025-07-18 16:03:06,829 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 16:03:10,343 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18 16:03:10,344 INFO: Test report saved at reports/report_test_wikipedia_20250718_160310.json
+2025-07-18 16:03:20,564 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"Waiting for title to contain \"Selenium WebDriver\"\nWait timed out after 15184ms"}}
+2025-07-18 16:03:20,565 INFO: Test report saved at reports/report_test_google_search_20250718_160320.json
+2025-07-18 16:03:20,904 INFO: 127.0.0.1 - - [18/Jul/2025 16:03:20] "POST /execute HTTP/1.1" 200 -
+2025-07-18 16:05:25,952 INFO: 127.0.0.1 - - [18/Jul/2025 16:05:25] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 16:05:26,207 INFO: Received execute request: browser=chrome, clientId=3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18 16:05:26,223 INFO: Sent test case test_google_search to Node server
+2025-07-18 16:05:31,229 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 16:05:34,661 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18 16:05:34,662 INFO: Test report saved at reports/report_test_wikipedia_20250718_160534.json
+2025-07-18 16:05:44,658 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"Waiting for title to contain \"Selenium WebDriver\"\nWait timed out after 15144ms"}}
+2025-07-18 16:05:44,659 INFO: Test report saved at reports/report_test_google_search_20250718_160544.json
+2025-07-18 16:05:45,319 INFO: 127.0.0.1 - - [18/Jul/2025 16:05:45] "POST /execute HTTP/1.1" 200 -
+2025-07-18 16:08:10,176 ERROR: WebSocket error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-18 16:08:10,176 ERROR: [WinError 10054] An existing connection was forcibly closed by the remote host - goodbye
+2025-07-18 16:08:10,176 INFO: WebSocket connection closed
+2025-07-18 16:08:42,103 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 16:08:42,103 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 16:08:46,154 ERROR: WebSocket error: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 16:08:46,154 ERROR: [WinError 10061] No connection could be made because the target machine actively refused it - goodbye
+2025-07-18 16:08:46,154 INFO: WebSocket connection closed
+2025-07-18 16:10:04,154 INFO: 127.0.0.1 - - [18/Jul/2025 16:10:04] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 16:10:04,421 INFO: Received execute request: browser=chrome, clientId=b8c4177f-4cbe-492a-b3f9-e67ec42edb5d
+2025-07-18 16:10:04,422 ERROR: Exception on /execute [POST]
+Traceback (most recent call last):
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\app.py", line 102, in execute_tests
+    result = loop.run_until_complete(send_test_cases())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\app.py", line 87, in send_test_cases
+    ws.send(json.dumps({'type': 'test-case', 'clientId': client_id, 'testCase': test_case}))
+  File "C:\Users\Rakshith.kumar\Desktop\project\flask-backend\.venv\Lib\site-packages\websocket\_app.py", line 291, in send
+    raise WebSocketConnectionClosedException("Connection is already closed.")
+websocket._exceptions.WebSocketConnectionClosedException: Connection is already closed.
+2025-07-18 16:10:04,426 INFO: 127.0.0.1 - - [18/Jul/2025 16:10:04] "[35m[1mPOST /execute HTTP/1.1[0m" 500 -
+2025-07-18 16:11:39,113 INFO: Websocket connected
+2025-07-18 16:11:39,113 INFO: Connected to Node server
+2025-07-18 16:11:39,122 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-18 16:11:39,122 INFO: [33mPress CTRL+C to quit[0m
+2025-07-18 16:12:08,005 INFO: 127.0.0.1 - - [18/Jul/2025 16:12:08] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 16:12:08,251 INFO: Received execute request: browser=chrome, clientId=c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18 16:12:08,251 INFO: Sent test case test_google_search to Node server
+2025-07-18 16:12:13,265 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 16:12:16,743 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18 16:12:16,745 INFO: Test report saved at reports/report_test_wikipedia_20250718_161216.json
+2025-07-18 16:12:17,131 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"passed","error":null}}
+2025-07-18 16:12:17,132 INFO: Test report saved at reports/report_test_google_search_20250718_161217.json
+2025-07-18 16:12:18,268 INFO: 127.0.0.1 - - [18/Jul/2025 16:12:18] "POST /execute HTTP/1.1" 200 -
+2025-07-18 17:26:17,641 INFO: 127.0.0.1 - - [18/Jul/2025 17:26:17] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 17:26:17,893 INFO: Received execute request: browser=chrome, clientId=c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18 17:26:17,893 INFO: Sent test case test_google_search to Node server
+2025-07-18 17:26:22,901 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 17:26:26,609 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18 17:26:26,610 INFO: Test report saved at reports/report_test_wikipedia_20250718_172626.json
+2025-07-18 17:26:27,763 INFO: Received message from Node: {"type":"test-result","result":{"name":"test_google_search","status":"passed","error":null}}
+2025-07-18 17:26:27,763 INFO: Test report saved at reports/report_test_google_search_20250718_172627.json
+2025-07-18 17:26:27,910 INFO: 127.0.0.1 - - [18/Jul/2025 17:26:27] "POST /execute HTTP/1.1" 200 -
+2025-07-18 17:27:07,566 INFO: 127.0.0.1 - - [18/Jul/2025 17:27:07] "OPTIONS /execute HTTP/1.1" 200 -
+2025-07-18 17:27:07,882 INFO: Received execute request: browser=chrome, clientId=c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18 17:27:07,882 INFO: Sent test case test_google_search to Node server
+2025-07-18 17:27:07,922 INFO: Received message from Node: {"type":"error","message":"Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4 not found"}
+2025-07-18 17:27:12,893 INFO: Sent test case test_wikipedia to Node server
+2025-07-18 17:27:12,893 INFO: Received message from Node: {"type":"error","message":"Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4 not found"}
+2025-07-18 18:24:29,756 ERROR: WebSocket error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-07-18 18:24:29,756 ERROR: [WinError 10054] An existing connection was forcibly closed by the remote host - goodbye
+2025-07-18 18:24:29,756 INFO: WebSocket connection closed

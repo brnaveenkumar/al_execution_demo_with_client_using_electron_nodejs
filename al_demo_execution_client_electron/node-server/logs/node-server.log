@@ -1,0 +1,115 @@
+2025-07-18T10:14:56.514Z info: Node WebSocket server running on ws://localhost:8080
+2025-07-18T10:14:58.581Z info: New connection established
+2025-07-18T10:14:58.601Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:14:58.604Z info: Electron client registered with ID: b7e8fba9-18d2-44ed-9c31-ae3d5e00b86a
+2025-07-18T10:16:57.486Z info: Connection closed
+2025-07-18T10:16:57.487Z info: Electron client b7e8fba9-18d2-44ed-9c31-ae3d5e00b86a disconnected
+2025-07-18T10:17:01.534Z info: New connection established
+2025-07-18T10:17:01.549Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:17:01.549Z info: Electron client registered with ID: 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:17:09.772Z info: New connection established
+2025-07-18T10:17:09.779Z info: Received message: {"type":"register-flask"}
+2025-07-18T10:17:09.779Z info: Flask backend registered
+2025-07-18T10:17:57.160Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:17:57.161Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:18:00.484Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:18:00.485Z info: Sent test result to Flask backend
+2025-07-18T10:18:02.150Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:18:02.151Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:18:04.234Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:18:04.235Z info: Sent test result to Flask backend
+2025-07-18T10:22:31.253Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:22:31.253Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:22:34.425Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:22:34.426Z info: Sent test result to Flask backend
+2025-07-18T10:22:36.267Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:22:36.268Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:22:38.238Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:22:38.239Z info: Sent test result to Flask backend
+2025-07-18T10:26:03.887Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:26:03.888Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:26:06.816Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:26:06.818Z info: Sent test result to Flask backend
+2025-07-18T10:26:08.888Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:26:08.888Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:26:10.836Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:26:10.838Z info: Sent test result to Flask backend
+2025-07-18T10:28:46.631Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:28:46.632Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:28:49.258Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"element not interactable\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:28:49.259Z info: Sent test result to Flask backend
+2025-07-18T10:28:51.630Z info: Received message: {"type":"test-case","clientId":"0c680afc-570e-454e-b41b-6be863c6268d","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:28:51.631Z info: Sent test case to Electron client 0c680afc-570e-454e-b41b-6be863c6268d
+2025-07-18T10:28:53.668Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"failed","error":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"searchButton\"]\"}\n  (Session info: chrome=138.0.7204.102)"}}
+2025-07-18T10:28:53.669Z info: Sent test result to Flask backend
+2025-07-18T10:31:35.930Z info: Node WebSocket server running on ws://localhost:8080
+2025-07-18T10:31:38.448Z info: New connection established
+2025-07-18T10:31:38.457Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:31:38.459Z info: Electron client registered with ID: 53b1b8b5-4df3-40b0-b8e9-03061d22cf8f
+2025-07-18T10:31:41.019Z info: Connection closed
+2025-07-18T10:31:41.020Z info: Electron client 53b1b8b5-4df3-40b0-b8e9-03061d22cf8f disconnected
+2025-07-18T10:31:45.919Z info: New connection established
+2025-07-18T10:31:45.938Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:31:45.939Z info: Electron client registered with ID: 3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18T10:31:53.761Z info: New connection established
+2025-07-18T10:31:53.769Z info: Received message: {"type":"register-flask"}
+2025-07-18T10:31:53.770Z info: Flask backend registered
+2025-07-18T10:33:01.814Z info: Received message: {"type":"test-case","clientId":"3503ae6a-fa8d-490a-b561-4bb9504460c4","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:33:01.816Z info: Sent test case to Electron client 3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18T10:33:06.824Z info: Received message: {"type":"test-case","clientId":"3503ae6a-fa8d-490a-b561-4bb9504460c4","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:33:06.824Z info: Sent test case to Electron client 3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18T10:33:10.324Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18T10:33:10.325Z info: Sent test result to Flask backend
+2025-07-18T10:33:20.546Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"Waiting for title to contain \"Selenium WebDriver\"\nWait timed out after 15184ms"}}
+2025-07-18T10:33:20.547Z info: Sent test result to Flask backend
+2025-07-18T10:35:26.223Z info: Received message: {"type":"test-case","clientId":"3503ae6a-fa8d-490a-b561-4bb9504460c4","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:35:26.224Z info: Sent test case to Electron client 3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18T10:35:31.224Z info: Received message: {"type":"test-case","clientId":"3503ae6a-fa8d-490a-b561-4bb9504460c4","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:35:31.225Z info: Sent test case to Electron client 3503ae6a-fa8d-490a-b561-4bb9504460c4
+2025-07-18T10:35:34.646Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18T10:35:34.647Z info: Sent test result to Flask backend
+2025-07-18T10:35:44.641Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"failed","error":"Waiting for title to contain \"Selenium WebDriver\"\nWait timed out after 15144ms"}}
+2025-07-18T10:35:44.642Z info: Sent test result to Flask backend
+2025-07-18T10:38:13.448Z info: Node WebSocket server running on ws://localhost:8080
+2025-07-18T10:38:15.203Z info: New connection established
+2025-07-18T10:38:15.218Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:38:15.221Z info: Electron client registered with ID: b5f79e20-67b5-42a6-a163-3fe3eaf1f9e2
+2025-07-18T10:38:19.225Z info: Connection closed
+2025-07-18T10:38:19.226Z info: Electron client b5f79e20-67b5-42a6-a163-3fe3eaf1f9e2 disconnected
+2025-07-18T10:39:10.251Z info: Node WebSocket server running on ws://localhost:8080
+2025-07-18T10:39:15.327Z info: New connection established
+2025-07-18T10:39:15.343Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:39:15.344Z info: Electron client registered with ID: b8c4177f-4cbe-492a-b3f9-e67ec42edb5d
+2025-07-18T10:41:16.729Z info: Node WebSocket server running on ws://localhost:8080
+2025-07-18T10:41:29.092Z info: New connection established
+2025-07-18T10:41:29.105Z info: Received message: {"type":"register-electron"}
+2025-07-18T10:41:29.107Z info: Electron client registered with ID: c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18T10:41:39.116Z info: New connection established
+2025-07-18T10:41:39.123Z info: Received message: {"type":"register-flask"}
+2025-07-18T10:41:39.125Z info: Flask backend registered
+2025-07-18T10:42:08.270Z info: Received message: {"type":"test-case","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T10:42:08.271Z info: Sent test case to Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18T10:42:13.275Z info: Received message: {"type":"test-case","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T10:42:13.276Z info: Sent test case to Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18T10:42:16.739Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18T10:42:16.739Z info: Sent test result to Flask backend
+2025-07-18T10:42:17.124Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"passed","error":null}}
+2025-07-18T10:42:17.125Z info: Sent test result to Flask backend
+2025-07-18T11:56:17.905Z info: Received message: {"type":"test-case","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T11:56:17.906Z info: Sent test case to Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18T11:56:22.909Z info: Received message: {"type":"test-case","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T11:56:22.909Z info: Sent test case to Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4
+2025-07-18T11:56:26.603Z info: Received message: {"type":"test-result","result":{"name":"test_wikipedia","status":"passed","error":null}}
+2025-07-18T11:56:26.604Z info: Sent test result to Flask backend
+2025-07-18T11:56:27.759Z info: Received message: {"type":"test-result","result":{"name":"test_google_search","status":"passed","error":null}}
+2025-07-18T11:56:27.760Z info: Sent test result to Flask backend
+2025-07-18T11:56:41.224Z info: Connection closed
+2025-07-18T11:56:41.224Z info: Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4 disconnected
+2025-07-18T11:56:59.517Z info: New connection established
+2025-07-18T11:56:59.535Z info: Received message: {"type":"register-electron"}
+2025-07-18T11:56:59.537Z info: Electron client registered with ID: c00c4414-9c9e-4015-b197-5c9b141e3099
+2025-07-18T11:57:07.907Z info: Received message: {"type":"test-case","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4","testCase":{"name":"test_google_search","browser":"chrome"}}
+2025-07-18T11:57:07.908Z error: Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4 not found
+2025-07-18T11:57:12.894Z info: Received message: {"type":"test-case","clientId":"c293f327-0494-44f6-8bea-64c6aeb3d0d4","testCase":{"name":"test_wikipedia","browser":"chrome"}}
+2025-07-18T11:57:12.894Z error: Electron client c293f327-0494-44f6-8bea-64c6aeb3d0d4 not found
+2025-07-18T13:19:28.287Z info: Node WebSocket server running on ws://localhost:8080

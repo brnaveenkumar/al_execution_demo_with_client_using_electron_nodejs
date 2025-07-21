@@ -1,0 +1,140 @@
+2025-07-18T10:17:57.170Z info: Starting test case: test_google_search
+2025-07-18T10:17:58.339Z info: Browser chrome opened
+2025-07-18T10:18:00.376Z error: Test case failed: element not interactable
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:18:00.475Z info: Browser chrome closed
+2025-07-18T10:18:02.157Z info: Starting test case: test_wikipedia
+2025-07-18T10:18:03.102Z info: Browser chrome opened
+2025-07-18T10:18:04.139Z error: Test case failed: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="searchButton"]"}
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:18:04.226Z info: Browser chrome closed
+2025-07-18T10:22:31.260Z info: Starting test case: test_google_search
+2025-07-18T10:22:32.159Z info: Browser chrome opened
+2025-07-18T10:22:34.325Z error: Test case failed: element not interactable
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:22:34.421Z info: Browser chrome closed
+2025-07-18T10:22:36.277Z info: Starting test case: test_wikipedia
+2025-07-18T10:22:37.144Z info: Browser chrome opened
+2025-07-18T10:22:38.147Z error: Test case failed: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="searchButton"]"}
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:22:38.234Z info: Browser chrome closed
+2025-07-18T10:26:03.895Z info: Starting test case: test_google_search
+2025-07-18T10:26:04.757Z info: Browser chrome opened
+2025-07-18T10:26:06.762Z error: Test case failed: element not interactable
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:26:06.813Z info: Browser chrome closed
+2025-07-18T10:26:08.890Z info: Starting test case: test_wikipedia
+2025-07-18T10:26:09.759Z info: Browser chrome opened
+2025-07-18T10:26:10.748Z error: Test case failed: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="searchButton"]"}
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:26:10.834Z info: Browser chrome closed
+2025-07-18T10:28:46.648Z info: Starting test case: test_google_search
+2025-07-18T10:28:47.554Z info: Browser chrome opened
+2025-07-18T10:28:49.192Z error: Test case failed: element not interactable
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:28:49.269Z info: Browser chrome closed
+2025-07-18T10:28:51.647Z info: Starting test case: test_wikipedia
+2025-07-18T10:28:52.550Z info: Browser chrome opened
+2025-07-18T10:28:53.608Z error: Test case failed: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="searchButton"]"}
+  (Session info: chrome=138.0.7204.102)
+2025-07-18T10:28:53.680Z info: Browser chrome closed
+2025-07-18T10:33:01.836Z info: Starting test case: test_google_search
+2025-07-18T10:33:02.808Z info: Browser chrome opened
+2025-07-18T10:33:04.774Z info: Navigated to Google
+2025-07-18T10:33:04.792Z info: No consent screen found or already handled
+2025-07-18T10:33:04.893Z info: Entered search query
+2025-07-18T10:33:04.904Z info: Found search button with selector: By(css selector, input[type="submit"][value*="Search"])
+2025-07-18T10:33:04.934Z info: Search button HTML: <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjO7fW0msaOAxXVLrkGHU2QLzcQ4dUDCBA">
+2025-07-18T10:33:04.934Z info: Search button state - Visible: false, Enabled: true
+2025-07-18T10:33:05.264Z info: Clicked search button via Selenium
+2025-07-18T10:33:06.840Z info: Starting test case: test_wikipedia
+2025-07-18T10:33:07.755Z info: Browser chrome opened
+2025-07-18T10:33:08.696Z info: Navigated to Wikipedia
+2025-07-18T10:33:08.760Z info: Entered Wikipedia search query
+2025-07-18T10:33:08.771Z info: Found Wikipedia search button with selector: By(css selector, .pure-button-primary-progressive)
+2025-07-18T10:33:08.794Z info: Wikipedia search button HTML: <button class="pure-button pure-button-primary-progressive" type="submit">
+<i class="sprite svg-search-icon" data-jsl10n="search-input-button">Search</i>
+</button>
+2025-07-18T10:33:08.794Z info: Wikipedia search button state - Visible: true, Enabled: true
+2025-07-18T10:33:08.870Z info: Clicked Wikipedia search button via Selenium
+2025-07-18T10:33:10.194Z info: Wikipedia search test passed
+2025-07-18T10:33:10.325Z info: Browser chrome closed
+2025-07-18T10:33:20.449Z error: Test case failed: Waiting for title to contain "Selenium WebDriver"
+Wait timed out after 15184ms
+2025-07-18T10:33:20.552Z info: Browser chrome closed
+2025-07-18T10:35:26.240Z info: Starting test case: test_google_search
+2025-07-18T10:35:27.122Z info: Browser chrome opened
+2025-07-18T10:35:28.984Z info: Navigated to Google
+2025-07-18T10:35:29.002Z info: No consent screen found or already handled
+2025-07-18T10:35:29.099Z info: Entered search query
+2025-07-18T10:35:29.109Z info: Found search button with selector: By(css selector, input[type="submit"][value*="Search"])
+2025-07-18T10:35:29.131Z info: Search button HTML: <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjp5d75msaOAxXSppUCHSS8EMsQ4dUDCBA">
+2025-07-18T10:35:29.131Z info: Search button state - Visible: false, Enabled: true
+2025-07-18T10:35:29.407Z info: Clicked search button via Selenium
+2025-07-18T10:35:31.237Z info: Starting test case: test_wikipedia
+2025-07-18T10:35:32.208Z info: Browser chrome opened
+2025-07-18T10:35:33.088Z info: Navigated to Wikipedia
+2025-07-18T10:35:33.165Z info: Entered Wikipedia search query
+2025-07-18T10:35:33.177Z info: Found Wikipedia search button with selector: By(css selector, .pure-button-primary-progressive)
+2025-07-18T10:35:33.197Z info: Wikipedia search button HTML: <button class="pure-button pure-button-primary-progressive" type="submit">
+<i class="sprite svg-search-icon" data-jsl10n="search-input-button">Search</i>
+</button>
+2025-07-18T10:35:33.198Z info: Wikipedia search button state - Visible: true, Enabled: true
+2025-07-18T10:35:33.263Z info: Clicked Wikipedia search button via Selenium
+2025-07-18T10:35:34.581Z info: Wikipedia search test passed
+2025-07-18T10:35:34.647Z info: Browser chrome closed
+2025-07-18T10:35:44.552Z error: Test case failed: Waiting for title to contain "Selenium WebDriver"
+Wait timed out after 15144ms
+2025-07-18T10:35:44.640Z info: Browser chrome closed
+2025-07-18T10:42:08.277Z info: Starting test case: test_google_search
+2025-07-18T10:42:09.205Z info: Browser chrome opened
+2025-07-18T10:42:10.006Z info: Navigated to Google
+2025-07-18T10:42:10.023Z info: No consent screen found or already handled
+2025-07-18T10:42:13.281Z info: Starting test case: test_wikipedia
+2025-07-18T10:42:14.305Z info: Browser chrome opened
+2025-07-18T10:42:15.068Z info: No CAPTCHA detected
+2025-07-18T10:42:15.187Z info: Entered search query
+2025-07-18T10:42:15.200Z info: Found search button with selector: By(css selector, input[type="submit"][value*="Search"])
+2025-07-18T10:42:15.225Z info: Search button HTML: <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjX7Z65nMaOAxWGUGwGHc7CIm0Q4dUDCBA">
+2025-07-18T10:42:15.225Z info: Search button state - Visible: false, Enabled: true
+2025-07-18T10:42:15.284Z info: Navigated to Wikipedia
+2025-07-18T10:42:15.342Z info: Entered Wikipedia search query
+2025-07-18T10:42:15.354Z info: Found Wikipedia search button with selector: By(css selector, .pure-button-primary-progressive)
+2025-07-18T10:42:15.375Z info: Wikipedia search button HTML: <button class="pure-button pure-button-primary-progressive" type="submit">
+<i class="sprite svg-search-icon" data-jsl10n="search-input-button">Search</i>
+</button>
+2025-07-18T10:42:15.375Z info: Wikipedia search button state - Visible: true, Enabled: true
+2025-07-18T10:42:15.439Z info: Clicked Wikipedia search button via Selenium
+2025-07-18T10:42:15.600Z info: Clicked search button via Selenium
+2025-07-18T10:42:16.653Z info: Wikipedia search test passed
+2025-07-18T10:42:16.722Z info: Browser chrome closed
+2025-07-18T10:42:16.987Z info: Google search test passed (title matches "Selenium" or "Google Search")
+2025-07-18T10:42:17.007Z info: Final URL: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSelenium%2BWebDriver%26sca_esv%3D30db70402d7c8856%26source%3Dhp%26ei%3DASV6aJfpFIahseMPzoWL6QY%26iflsig%3DAOw8s4IAAAAAaHozEZXFxhHOfmBkztr6febZSSOmbLt5%26ved%3D0ahUKEwjX7Z65nMaOAxWGUGwGHc7CIm0Q4dUDCBA%26oq%3DSelenium%2BWebDriver%26gs_lp%3DEgdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXIyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOYCUABYJXAAeACQAQGYAVygAc4CqgEBNLgBDMgBAPgBAZgCA6ACgQKYAwCSBwEzoAeQF7IHATO4B4ECwgcFMC4xLjLIBww%26sclient%3Dgws-wiz%26sei%3DByV6aMS1IZabseMPgYzBgAk&q=EgR6pkUTGIfK6MMGIjBPqstiBdNKUcUcLQEcr9lFHWJuNdwb15MWgJJNuiWUxdXMBDAMBY47I70J-ForjgsyAVJaAUM
+2025-07-18T10:42:17.007Z info: Final title: https://www.google.com/search?q=Selenium+WebDriver&sca_esv=30db70402d7c8856&source=hp&ei=ASV6aJfpFIahseMPzoWL6QY&iflsig=AOw8s4IAAAAAaHozEZXFxhHOfmBkztr6febZSSOmbLt5&ved=0ahUKEwjX7Z65nMaOAxWGUGwGHc7CIm0Q4dUDCBA&oq=Selenium+WebDriver&gs_lp=Egdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXIyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOYCUABYJXAAeACQAQGYAVygAc4CqgEBNLgBDMgBAPgBAZgCA6ACgQKYAwCSBwEzoAeQF7IHATO4B4ECwgcFMC4xLjLIBww&sclient=gws-wiz&sei=ByV6aMS1IZabseMPgYzBgAk
+2025-07-18T10:42:17.110Z info: Browser chrome closed
+2025-07-18T11:56:17.908Z info: Starting test case: test_google_search
+2025-07-18T11:56:19.114Z info: Browser chrome opened
+2025-07-18T11:56:19.667Z info: Navigated to Google
+2025-07-18T11:56:20.364Z info: No consent screen found or already handled
+2025-07-18T11:56:22.911Z info: Starting test case: test_wikipedia
+2025-07-18T11:56:23.846Z info: Browser chrome opened
+2025-07-18T11:56:25.071Z info: Navigated to Wikipedia
+2025-07-18T11:56:25.133Z info: Entered Wikipedia search query
+2025-07-18T11:56:25.145Z info: Found Wikipedia search button with selector: By(css selector, .pure-button-primary-progressive)
+2025-07-18T11:56:25.167Z info: Wikipedia search button HTML: <button class="pure-button pure-button-primary-progressive" type="submit">
+<i class="sprite svg-search-icon" data-jsl10n="search-input-button">Search</i>
+</button>
+2025-07-18T11:56:25.168Z info: Wikipedia search button state - Visible: true, Enabled: true
+2025-07-18T11:56:25.238Z info: Clicked Wikipedia search button via Selenium
+2025-07-18T11:56:25.528Z info: No CAPTCHA detected
+2025-07-18T11:56:25.669Z info: Entered search query
+2025-07-18T11:56:25.679Z info: Found search button with selector: By(css selector, input[type="submit"][value*="Search"])
+2025-07-18T11:56:25.704Z info: Search button HTML: <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwj9r6KDrcaOAxUA4TgGHTPZJEUQ4dUDCBA">
+2025-07-18T11:56:25.705Z info: Search button state - Visible: false, Enabled: true
+2025-07-18T11:56:26.103Z info: Clicked search button via Selenium
+2025-07-18T11:56:26.493Z info: Wikipedia search test passed
+2025-07-18T11:56:26.595Z info: Browser chrome closed
+2025-07-18T11:56:27.614Z info: Google search test passed (title matches "Selenium" or "Google Search")
+2025-07-18T11:56:27.632Z info: Final URL: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSelenium%2BWebDriver%26sca_esv%3D6b528a5c293e48d5%26source%3Dhp%26ei%3DYzZ6aL3yIYDC4-EPs7KTqQQ%26iflsig%3DAOw8s4IAAAAAaHpEcwlr1IMtbcyVDyvewzgl1cS-GONG%26ved%3D0ahUKEwj9r6KDrcaOAxUA4TgGHTPZJEUQ4dUDCBA%26oq%3DSelenium%2BWebDriver%26gs_lp%3DEgdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXIyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOcCUABYG3AAeACQAQKYAYUBoAH3A6oBAzAuNLgBDMgBAPgBAZgCAqAC_AGYAwCSBwMwLjKgB5AXsgcDMC4yuAf8AcIHBTAuMS4xyAcK%26sclient%3Dgws-wiz%26sei%3DajZ6aIScAuWP4-EPzd2FkA8&q=EgR6pkUTGOrs6MMGIjAbRfhh5eJDgfJ0S0c6uSNksLtfnGf0q6_dlajnBc-xgxZcr4j-oxDQtfkqAa6u1fkyAVJaAUM
+2025-07-18T11:56:27.633Z info: Final title: https://www.google.com/search?q=Selenium+WebDriver&sca_esv=6b528a5c293e48d5&source=hp&ei=YzZ6aL3yIYDC4-EPs7KTqQQ&iflsig=AOw8s4IAAAAAaHpEcwlr1IMtbcyVDyvewzgl1cS-GONG&ved=0ahUKEwj9r6KDrcaOAxUA4TgGHTPZJEUQ4dUDCBA&oq=Selenium+WebDriver&gs_lp=Egdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXIyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOcCUABYG3AAeACQAQKYAYUBoAH3A6oBAzAuNLgBDMgBAPgBAZgCAqAC_AGYAwCSBwMwLjKgB5AXsgcDMC4yuAf8AcIHBTAuMS4xyAcK&sclient=gws-wiz&sei=ajZ6aIScAuWP4-EPzd2FkA8
+2025-07-18T11:56:27.750Z info: Browser chrome closed

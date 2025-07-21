@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>React Test Client</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.25.6/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState } = React;
+
+    // Simple console-based logger for browser
+    const logger = {
+      info: (message) => console.log(`[INFO] ${new Date().toISOString()}: ${message}`),
+      error: (message) => console.error(`[ERROR] ${new Date().toISOString()}: ${message}`)
+    };
+
+    function App() {
+      const [browser, setBrowser] = useState('chrome');
+      const [clientId, setClientId] = useState('');
+      const [status, setStatus] = useState('');
+
+      const handleExecute = async () => {
+        logger.info(`Executing tests with browser: ${browser}, clientId: ${clientId}`);
+        try {
+          const response = await axios.post('http://localhost:5000/execute', {
+            browser,
+            clientId
+          });
+          logger.info(`Response: ${JSON.stringify(response.data)}`);
+          setStatus(`Tests executed: ${JSON.stringify(response.data)}`);
+        } catch (error) {
+          logger.error(`Error executing tests: ${error.message}`);
+          setStatus(`Error: ${error.message}`);
+        }
+      };
+
+      return (
+        <div className="p-4 max-w-md mx-auto">
+          <h1 className="text-2xl font-bold mb-4">Test Runner</h1>
+          <div className="mb-4">
+            <label className="block mb-1">Browser:</label>
+            <select
+              value={browser}
+              onChange={(e) => setBrowser(e.target.value)}
+              className="border p-2 w-full"
+            >
+              <option value="chrome">Chrome</option>
+              <option value="firefox">Firefox</option>
+            </select>
+          </div>
+          <div className="mb-4">
+            <label className="block mb-1">Electron Client ID:</label>
+            <input
+              type="text"
+              value={clientId}
+              onChange={(e) => setClientId(e.target.value)}
+              className="border p-2 w-full"
+              placeholder="Enter Electron Client ID"
+            />
+          </div>
+          <button
+            onClick={handleExecute}
+            className="bg-blue-500 text-white p-2 rounded"
+          >
+            Execute
+          </button>
+          <p className="mt-4">{status}</p>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+flask==3.0.3
+websocket-client==1.8.0
+selenium==4.25.0
+python-dotenv==1.0.1
+winston==0.1.1
