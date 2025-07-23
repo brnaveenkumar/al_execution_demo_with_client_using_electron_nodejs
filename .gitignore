@@ -1,13 +1,128 @@
-# Node modules
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Logs
 logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Environment variables
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# React/Build
+/build
+/dist
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Electron
+/dist_electron
+electron-builder.yml
+*.exe
+*.dmg
+*.app
+*.msi
+
+# Testing
+/coverage
+.nyc_output
+
+# Debug
+debug.log
+debug/
+
+# Misc
+.cache/
+.temp/
+*.bak
+*.tmp
+*.swp
+.DS_Store
 .env
+.env.*
+!.env.example
 
-# Build files
-dist/
-build/
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Reports and generated files
+*.csv
+*.xlsx
+*.pdf
+/reports/
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json

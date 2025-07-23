@@ -138,3 +138,293 @@ Wait timed out after 15144ms
 2025-07-18T11:56:27.632Z info: Final URL: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSelenium%2BWebDriver%26sca_esv%3D6b528a5c293e48d5%26source%3Dhp%26ei%3DYzZ6aL3yIYDC4-EPs7KTqQQ%26iflsig%3DAOw8s4IAAAAAaHpEcwlr1IMtbcyVDyvewzgl1cS-GONG%26ved%3D0ahUKEwj9r6KDrcaOAxUA4TgGHTPZJEUQ4dUDCBA%26oq%3DSelenium%2BWebDriver%26gs_lp%3DEgdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXIyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOcCUABYG3AAeACQAQKYAYUBoAH3A6oBAzAuNLgBDMgBAPgBAZgCAqAC_AGYAwCSBwMwLjKgB5AXsgcDMC4yuAf8AcIHBTAuMS4xyAcK%26sclient%3Dgws-wiz%26sei%3DajZ6aIScAuWP4-EPzd2FkA8&q=EgR6pkUTGOrs6MMGIjAbRfhh5eJDgfJ0S0c6uSNksLtfnGf0q6_dlajnBc-xgxZcr4j-oxDQtfkqAa6u1fkyAVJaAUM
 2025-07-18T11:56:27.633Z info: Final title: https://www.google.com/search?q=Selenium+WebDriver&sca_esv=6b528a5c293e48d5&source=hp&ei=YzZ6aL3yIYDC4-EPs7KTqQQ&iflsig=AOw8s4IAAAAAaHpEcwlr1IMtbcyVDyvewzgl1cS-GONG&ved=0ahUKEwj9r6KDrcaOAxUA4TgGHTPZJEUQ4dUDCBA&oq=Selenium+WebDriver&gs_lp=Egdnd3Mtd2l6IhJTZWxlbml1bSBXZWJEcml2ZXIyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOcCUABYG3AAeACQAQKYAYUBoAH3A6oBAzAuNLgBDMgBAPgBAZgCAqAC_AGYAwCSBwMwLjKgB5AXsgcDMC4yuAf8AcIHBTAuMS4xyAcK&sclient=gws-wiz&sei=ajZ6aIScAuWP4-EPzd2FkA8
 2025-07-18T11:56:27.750Z info: Browser chrome closed
+2025-07-21T11:25:32.587Z info: Starting test case: test_google_search
+2025-07-21T11:25:32.589Z error: Test case failed: Do not know how to build driver: Chrome; did you forget to call usingServer(url)?
+2025-07-21T11:25:37.599Z info: Starting test case: test_wikipedia
+2025-07-21T11:25:37.599Z error: Test case failed: Do not know how to build driver: Chrome; did you forget to call usingServer(url)?
+2025-07-21T11:30:56.085Z info: Starting test case: test_google_search
+2025-07-21T11:30:56.086Z error: Test case failed: Do not know how to build driver: Chrome; did you forget to call usingServer(url)?
+2025-07-21T11:31:01.088Z info: Starting test case: test_wikipedia
+2025-07-21T11:31:01.089Z error: Test case failed: Do not know how to build driver: Chrome; did you forget to call usingServer(url)?
+2025-07-21T13:03:47.407Z info: Starting test case: test_1_Login_with_valid_credential_1.py
+2025-07-21T13:03:47.411Z error: Test case failed: Do not know how to build driver: Chrome; did you forget to call usingServer(url)?
+2025-07-21T13:03:47.423Z info: Starting test case: test_2_Login_with_invalid_credentials_2.py
+2025-07-21T13:03:47.423Z error: Test case failed: Do not know how to build driver: Chrome; did you forget to call usingServer(url)?
+2025-07-21T13:07:48.715Z info: Starting test case: test_1_Login_with_valid_credential_1.py
+2025-07-21T13:07:50.235Z info: Starting test case: test_2_Login_with_invalid_credentials_2.py
+2025-07-21T13:07:51.981Z error: Test case failed: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 138.0.7204.101 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-07-21T13:07:55.826Z error: Test case failed: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 138.0.7204.101 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-07-21T13:20:08.413Z info: Starting test case: test_1_Login_with_valid_credential_1.py
+2025-07-21T13:20:08.447Z info: Starting test case: test_2_Login_with_invalid_credentials_2.py
+2025-07-22T06:00:45.857Z info: Starting test case: test_login.py
+2025-07-22T06:00:45.858Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:00:46.568Z info: Python process exited with code 0
+2025-07-22T06:00:46.569Z info: Test execution completed with status: passed
+2025-07-22T06:01:54.367Z info: Starting test case: test_login.py
+2025-07-22T06:01:54.368Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:01:54.950Z info: Python process exited with code 0
+2025-07-22T06:01:54.951Z info: Test execution completed with status: passed
+2025-07-22T06:16:32.862Z info: Starting test case: test_login.py
+2025-07-22T06:16:32.862Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:16:32.863Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:16:33.020Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:17:04.131Z error: Python stderr: .
+----------------------------------------------------------------------
+
+2025-07-22T06:17:04.136Z error: Python stderr: Ran 1 test in 28.997s
+
+OK
+
+2025-07-22T06:17:04.140Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="f0cef627db31ddf93fc7bafd199c3b33")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:17:04.272Z info: Python process exited with code 0
+2025-07-22T06:17:04.273Z info: Found screenshot: before_login.png
+2025-07-22T06:17:04.274Z info: Found screenshot: after_login.png
+2025-07-22T06:17:04.278Z info: Test execution completed with status: passed
+2025-07-22T06:17:25.957Z info: Starting test case: test_login.py
+2025-07-22T06:17:25.958Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:17:25.959Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:17:26.134Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:17:56.431Z error: Python stderr: .
+----------------------------------------------------------------------
+Ran 1 test in 28.176s
+
+OK
+
+2025-07-22T06:17:56.432Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="36e5b5c84180713ea6e24c1a61ca6aad")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:17:56.517Z info: Python process exited with code 0
+2025-07-22T06:17:56.518Z info: Found screenshot: before_login.png
+2025-07-22T06:17:56.519Z info: Found screenshot: after_login.png
+2025-07-22T06:17:56.521Z info: Test execution completed with status: passed
+2025-07-22T06:19:04.018Z info: Starting test case: test_login.py
+2025-07-22T06:19:04.018Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:19:04.018Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:19:04.112Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:19:31.942Z error: Python stderr: .
+
+2025-07-22T06:19:31.943Z error: Python stderr: ----------------------------------------------------------------------
+Ran 1 test in 26.249s
+
+OK
+
+2025-07-22T06:19:31.943Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="4dc9eb58b42fc8bd10ca30c676eaf49a")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:19:32.042Z info: Python process exited with code 0
+2025-07-22T06:19:32.043Z info: Found screenshot: before_login.png
+2025-07-22T06:19:32.043Z info: Found screenshot: after_login.png
+2025-07-22T06:19:32.048Z info: Test execution completed with status: passed
+2025-07-22T06:20:32.168Z info: Starting test case: test_login.py
+2025-07-22T06:20:32.169Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:20:32.169Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:20:32.236Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:20:54.273Z error: Python stderr: .
+----------------------------------------------------------------------
+Ran 1 test in 20.956s
+
+OK
+
+2025-07-22T06:20:54.274Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="b83217c5faa3a0a1a7a17c07d0a2e898")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:20:54.348Z info: Python process exited with code 0
+2025-07-22T06:20:54.349Z info: Found screenshot: after_login.png
+2025-07-22T06:20:54.349Z info: Found screenshot: before_login.png
+2025-07-22T06:20:54.354Z info: Test execution completed with status: passed
+2025-07-22T06:24:38.493Z info: Starting test case: test_login.py
+2025-07-22T06:24:38.493Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:24:38.494Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:24:38.597Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:25:03.816Z error: Python stderr: .
+----------------------------------------------------------------------
+Ran 1 test in 24.242s
+
+
+2025-07-22T06:25:03.817Z error: Python stderr: OK
+
+2025-07-22T06:25:03.818Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="4c1a6c5bf81475566722b381c4bfb0ac")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:25:03.893Z info: Python process exited with code 0
+2025-07-22T06:25:03.894Z info: Found screenshot: before_login.png
+2025-07-22T06:25:03.894Z info: Found screenshot: after_login.png
+2025-07-22T06:25:03.898Z info: Test execution completed with status: passed
+2025-07-22T06:34:42.424Z info: Starting test case: test_login.py
+2025-07-22T06:34:42.425Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:34:42.426Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:34:42.590Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:35:06.578Z error: Python stderr: .
+----------------------------------------------------------------------
+Ran 1 test in 22.208s
+
+OK
+
+2025-07-22T06:35:06.580Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="3208a6d38cfff285d846694f7cf3f308")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:35:06.653Z info: Python process exited with code 0
+2025-07-22T06:35:06.655Z info: Found screenshot: before_login.png
+2025-07-22T06:35:06.656Z info: Found screenshot: after_login.png
+2025-07-22T06:35:06.660Z info: Test execution completed with status: passed
+2025-07-22T06:50:53.317Z info: Starting test case: test_login.py
+2025-07-22T06:50:53.319Z info: Executing Python test file: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:50:53.320Z info: Spawning Python process to run: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\test_login.py
+2025-07-22T06:50:53.472Z info: Python version: Python 3.12.9, exit code: 0
+2025-07-22T06:51:17.918Z error: Python stderr: .
+----------------------------------------------------------------------
+Ran 1 test in 22.703s
+
+OK
+
+2025-07-22T06:51:17.921Z info: Python stdout: Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+Starting test execution from: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Setting up Chrome driver...
+Chrome driver initialized: <selenium.webdriver.chrome.webdriver.WebDriver (session="1ab8ebfb55830a9d3229491fed2fc788")>
+Navigating to login page...
+Current URL: http://logistics.pearlarc.com/
+Starting login test
+Current URL before login: http://logistics.pearlarc.com/
+Current directory: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app
+Saved screenshot before login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\before_login.png
+Finding username field...
+Entered username: Monica
+Finding password field...
+Entered password: Monica@123
+Finding login button...
+Clicked login button
+Waiting for redirect...
+Saved screenshot after login at: C:\Workspace\Pearlarc\al_execution_demo_with_client_using_electron_nodejs\al_demo_execution_client_electron\electron-app\after_login.png
+Current URL after login: http://logistics.pearlarc.com/
+Page title: Logistics
+Closing browser...
+Browser closed
+
+2025-07-22T06:51:17.995Z info: Python process exited with code 0
+2025-07-22T06:51:17.996Z info: Found screenshot: after_login.png
+2025-07-22T06:51:17.996Z info: Found screenshot: before_login.png
+2025-07-22T06:51:18.000Z info: Test execution completed with status: passed

@@ -1,0 +1,214 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.test-runner, .report-viewer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.test-result {
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.test-result.passed {
+  background-color: #e8f5e9;
+  border-color: #c8e6c9;
+}
+
+.test-result.failed {
+  background-color: #ffebee;
+  border-color: #ffcdd2;
+}
+
+.error-message {
+  background-color: #fff3f3;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.test-steps {
+  margin: 10px 0;
+}
+
+.test-steps ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.test-steps li {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.test-steps li.passed {
+  background-color: #e8f5e9;
+}
+
+.test-steps li.failed {
+  background-color: #ffebee;
+}
+
+.screenshots {
+  margin: 15px 0;
+}
+
+.screenshots {
+  margin: 15px 0;
+}
+
+.screenshot {
+  margin: 15px 0;
+}
+
+.screenshot img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.reports-section {
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.reports-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.reports-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.reports-list button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.report-details {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.step-message {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.output {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.reports-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.loading-indicator {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 123, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

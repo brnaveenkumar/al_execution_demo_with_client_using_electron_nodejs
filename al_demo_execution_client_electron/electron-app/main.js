@@ -58,17 +58,59 @@ function connectWebSocket() {
         logger.info(`Registered with ID: ${clientId}`);
         mainWindow.webContents.send('client-id', clientId);
       } else if (data.type === 'run-test') {
-        logger.info('Running test case');
-        const report = await runTestCase(data.testCase);
-        const reportPath = path.join(__dirname, 'report.json');
-        await fs.writeFile(reportPath, JSON.stringify(report));
-        logger.info('Test report saved locally');
+        logger.info(`Running test case: ${data.testCase.name}`);
+        
+        try {
+          // Create a unique directory for this test
+          const testDir = path.join(__dirname, 'test_' + Date.now());
+          await fs.mkdir(testDir, { recursive: true });
+          
+          // Save the test file content to the test directory
+          const testFilePath = path.join(testDir, data.testCase.name);
+          await fs.writeFile(testFilePath, data.testCase.content);
+          logger.info(`Test file saved at: ${testFilePath}`);
+          
+          // Run the test case
+          const report = await runTestCase(data.testCase, testFilePath);
+          
+          // Save the report locally
+          const reportPath = path.join(testDir, 'report.json');
+          await fs.writeFile(reportPath, JSON.stringify(report));
+          logger.info('Test report saved locally');
 
-        ws.send(JSON.stringify({ type: 'test-result', result: report }));
-        logger.info('Test report sent to Node server');
+          // Send the report back to the Node server with clientId
+          ws.send(JSON.stringify({ 
+            type: 'test-result', 
+            result: report,
+            clientId: clientId
+          }));
+          logger.info('Test report sent to Node server');
 
-        await fs.unlink(reportPath);
-        logger.info('Local test report deleted');
+          // Clean up temporary files
+          try {
+            const files = await fs.readdir(testDir);
+            for (const file of files) {
+              await fs.unlink(path.join(testDir, file));
+            }
+            await fs.rmdir(testDir);
+            logger.info(`Cleaned up test directory: ${testDir}`);
+          } catch (cleanupError) {
+            logger.error(`Error cleaning up test directory: ${cleanupError.message}`);
+          }
+        } catch (error) {
+          logger.error(`Error processing test case: ${error.message}`);
+          // Send error report back to Node server
+          ws.send(JSON.stringify({ 
+            type: 'test-result', 
+            result: {
+              name: data.testCase.name,
+              status: 'failed',
+              error: `Error processing test case: ${error.message}`,
+              output: error.stack || ''
+            },
+            clientId: clientId
+          }));
+        }
       }
     } catch (error) {
       logger.error(`Error processing message: ${error.message}`);
@@ -85,7 +127,15 @@ function connectWebSocket() {
   });
 }
 
-app.on('ready', () => {
+app.on('ready', async () => {
+  // Create logs directory if it doesn't exist
+  try {
+    await fs.mkdir('logs', { recursive: true });
+    logger.info('Logs directory created or already exists');
+  } catch (error) {
+    logger.error(`Error creating logs directory: ${error.message}`);
+  }
+  
   createWindow();
   connectWebSocket();
 });
