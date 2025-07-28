@@ -1,101 +1,63 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from websocket import WebSocketApp
-import json
+from flask import Flask, jsonify, request
 import os
+import json
+from flask_cors import CORS
+import logging
+from logging.handlers import RotatingFileHandler
+from websocket import create_connection
+import time
 import base64
 from datetime import datetime
-import logging
-import asyncio
-import threading
-import time
-from webdriver_manager.chrome import ChromeDriverManager
-
-# Logger setup
-os.makedirs('logs', exist_ok=True)
-log_file = 'logs/flask.log'
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s %(levelname)s: %(message)s',
-    handlers=[
-        logging.FileHandler(log_file),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS
+CORS(app)
+
+# Logger setup
+log_formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s')
+log_handler = RotatingFileHandler('logs/flask.log', maxBytes=1000000, backupCount=1)
+log_handler.setFormatter(log_formatter)
+app.logger.addHandler(log_handler)
+app.logger.setLevel(logging.INFO)
 
 ws = None
-test_results = []
+reports_dir = os.path.join(os.path.dirname(__file__), 'reports')
+screenshots_dir = os.path.join(reports_dir, 'screenshots')
 
-def on_message(ws, message):
-    logger.info(f"Received message from Node: {message}")
-    try:
-        data = json.loads(message)
-        if data['type'] == 'test-result':
-            result = data['result']
-            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            report_path = f"reports/report_{result['name']}_{timestamp}.json"
-            
-            # Save screenshots separately if they exist
-            if 'screenshots' in result and result['screenshots']:
-                screenshots_dir = os.path.join('reports', 'screenshots')
-                os.makedirs(screenshots_dir, exist_ok=True)
-                
-                for name, data in result['screenshots'].items():
-                    screenshot_path = os.path.join(screenshots_dir, f"{result['name']}_{timestamp}_{name}")
-                    try:
-                        with open(screenshot_path, 'wb') as f:
-                            f.write(base64.b64decode(data))
-                        logger.info(f"Screenshot saved at {screenshot_path}")
-                    except Exception as e:
-                        logger.error(f"Error saving screenshot {name}: {str(e)}")
-            
-            with open(report_path, 'w') as f:
-                json.dump(result, f)
-            logger.info(f"Test report saved at {report_path}")
-            test_results.append(result)
-    except Exception as e:
-        logger.error(f"Error processing message: {str(e)}")
-
-def on_error(ws, error):
-    logger.error(f"WebSocket error: {str(error)}")
-
-def on_close(ws, close_status_code, close_msg):
-    logger.info("WebSocket connection closed")
-    ws = None
-
-def on_open(ws):
-    logger.info("Connected to Node server")
-    ws.send(json.dumps({'type': 'register-flask'}))
-
-def connect_websocket():
+def connect_to_node_server():
     global ws
     try:
-        ws = WebSocketApp("ws://localhost:8080",
-                         on_open=on_open,
-                         on_message=on_message,
-                         on_error=on_error,
-                         on_close=on_close)
-        ws.run_forever()
+        ws = create_connection("ws://localhost:8080")
+        app.logger.info("Websocket connected")
+        app.logger.info("Connected to Node server")
+        ws.send(json.dumps({"type": "register-flask"}))
     except Exception as e:
-        logger.error(f"Failed to connect to WebSocket server: {str(e)}")
-        ws = None
+        app.logger.error(f"Failed to connect to Node server: {str(e)}")
 
-def start_websocket():
-    def run_websocket():
-        while True:
-            try:
-                connect_websocket()
-                time.sleep(5)  # Wait before attempting to reconnect
-            except Exception as e:
-                logger.error(f"WebSocket connection error: {str(e)}")
-                time.sleep(5)  # Wait before attempting to reconnect
-
-    threading.Thread(target=run_websocket, daemon=True).start()
+def save_report(report):
+    try:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        report_filename = f"report_{report['name']}_{timestamp}.json"
+        report_path = os.path.join(reports_dir, report_filename)
+        
+        if not os.path.exists(reports_dir):
+            os.makedirs(reports_dir)
+        
+        if not os.path.exists(screenshots_dir):
+            os.makedirs(screenshots_dir)
+        
+        if 'screenshots' in report:
+            for screenshot_name, screenshot_data in report['screenshots'].items():
+                screenshot_path = os.path.join(screenshots_dir, screenshot_name)
+                with open(screenshot_path, 'wb') as f:
+                    f.write(base64.b64decode(screenshot_data))
+                report['screenshots'][screenshot_name] = screenshot_path
+        
+        with open(report_path, 'w') as f:
+            json.dump(report, f, indent=4)
+        
+        app.logger.info(f"Test report saved at {report_path}")
+    except Exception as e:
+        app.logger.error(f"Error saving report: {str(e)}")
 
 @app.route('/reports', methods=['GET'])
 def get_reports():
@@ -133,7 +95,7 @@ def get_reports():
                     "data": report_data
                 })
         except Exception as e:
-            logger.error(f"Error reading report {report_file}: {str(e)}")
+            app.loger.error(f"Error reading report {report_file}: {str(e)}")
     
     # Sort reports by timestamp (newest first)
     reports.sort(key=lambda x: x.get('timestamp', '00000000_000000'), reverse=True)
@@ -160,7 +122,7 @@ def get_report(filename):
             "report": report_data
         })
     except Exception as e:
-        logger.error(f"Error reading report {filename}: {str(e)}")
+        app.logger.error(f"Error reading report {filename}: {str(e)}")
         return jsonify({
             "status": "error",
             "message": f"Error reading report: {str(e)}"
@@ -193,7 +155,7 @@ def delete_all_reports():
             "message": f"Deleted {deleted_count} reports and screenshots"
         })
     except Exception as e:
-        logger.error(f"Error deleting reports: {str(e)}")
+        app.logger.error(f"Error deleting reports: {str(e)}")
         return jsonify({
             "status": "error",
             "message": f"Error deleting reports: {str(e)}"
@@ -201,115 +163,63 @@ def delete_all_reports():
 
 @app.route('/execute-tests', methods=['POST'])
 def execute_tests():
-    # Import selenium libraries only when needed
-    import importlib.util
-    spec = importlib.util.find_spec('selenium')
-    if spec is None:
-        return jsonify({
-            "status": "error",
-            "message": "Selenium is not installed on the server"
-        }), 500
-
-    # Import Service and webdriver only when needed
-    from selenium import webdriver
-    from selenium.webdriver.chrome.service import Service
-    from selenium.webdriver.support.ui import WebDriverWait
-    
-    data = request.json
-    browser = data.get('browser')
-    client_id = data.get('clientId')
-    logger.info(f"Received execute request: browser={browser}, clientId={client_id}")
-
-    test_results = []
-    driver = None
-    
     try:
-        # Setup Chrome WebDriver
-        service = Service(ChromeDriverManager().install())
-        options = webdriver.ChromeOptions()
-        driver = webdriver.Chrome(service=service, options=options)
-        wait = WebDriverWait(driver, 10)
+        data = request.json
+        browser = data.get('browser')
+        framework = data.get('framework')
+        client_id = data.get('clientId')
+        app.logger.info(f"Received execute request: browser={browser}, framework={framework}, clientId={client_id}")
+
+        test_cases_dir = os.path.join(os.path.dirname(__file__), 'test_cases')
+        test_files = []
         
-        # Get all test files from test_cases directory
-        test_files = [f for f in os.listdir('test_cases') if f.endswith('.py')]
-        logger.info(f"Found {len(test_files)} test files: {test_files}")
+        if framework == 'Robot':
+            test_files = [f for f in os.listdir(test_cases_dir) if f.endswith('.robot')]
+        elif framework == 'Selenium':
+            test_files = [f for f in os.listdir(test_cases_dir) if f.endswith('.py') and f != '__init__.py']
+        
+        app.logger.info(f"Found {len(test_files)} test files: {test_files}")
         
         if not test_files:
-            logger.error("No test files found in test_cases directory")
-            return jsonify({
-                "status": "error",
-                "message": "No test files found in test_cases directory"
-            }), 404
-            
+            return jsonify({"error": f"No {framework} test files found"}), 400
+
         for test_file in test_files:
-            test_path = os.path.join('test_cases', test_file)
+            app.logger.info(f"Starting test: {test_file}")
+            with open(os.path.join(test_cases_dir, test_file), 'r') as f:
+                test_content = f.read()
             
-            try:
-                logger.info(f"Starting test: {test_file}")
-                
-                # Read the test file content
-                with open(test_path, 'r') as f:
-                    test_file_content = f.read()
-                
-                # Send test case to Node server for Electron execution
-                if ws:
-                    test_data = {
-                        'type': 'test-case',
-                        'clientId': client_id,
-                        'testCase': {
-                            'name': test_file,
-                            'browser': browser,
-                            'content': test_file_content
-                        }
-                    }
-                    ws.send(json.dumps(test_data))
-                    logger.info(f"Sent test case to Node server: {test_file}")
-                    # Add a small delay between sending test files
-                    time.sleep(1)
-                else:
-                    raise Exception("WebSocket connection not available")
-            except Exception as e:
-                logger.error(f"Failed to send test {test_file}: {str(e)}")
-                test_results.append({
-                    "name": test_file,
-                    "status": "failed",
-                    "error": str(e)
-                })
+            test_case = {
+                'name': test_file,
+                'browser': browser,
+                'framework': framework,
+                'content': test_content
+            }
+            
+            ws.send(json.dumps({
+                "type": "test-case",
+                "clientId": client_id,
+                "testCase": test_case
+            }))
+            app.logger.info(f"Sent test case to Node server: {test_file} (framework: {framework})")
+            
+            # Wait for test result
+            while True:
+                result = ws.recv()
+                result_data = json.loads(result)
+                if result_data['type'] == 'test-result':
+                    save_report(result_data['result'])
+                    app.logger.info(f"Received and saved result for {test_file}")
+                    break
+                time.sleep(0.1)
         
-        logger.info("All test cases sent to Electron")
-            
+        app.logger.info("All test cases sent to Electron")
+        return jsonify({"message": f"Executed {len(test_files)} test cases"})
     except Exception as e:
-        logger.error(f"Test setup failed: {str(e)}")
-        return jsonify({
-            "status": "error",
-            "message": f"Test setup failed: {str(e)}"
-        }), 500
-        
-    finally:
-        if driver:
-            driver.quit()
-
-    # Send results to WebSocket if connected
-    if ws:
-        ws.send(json.dumps({
-            'type': 'test-results',
-            'clientId': client_id,
-            'results': test_results
-        }))
-
-    # Create reports directory if it doesn't exist
-    os.makedirs('reports', exist_ok=True)
-
-    # We don't need to create a summary report anymore since we're handling individual test reports
-    # The React frontend will fetch all reports directly
-
-    return jsonify({
-        'status': 'success',
-        'results': test_results
-    })
+        app.logger.error(f"Error in execute_tests: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    os.makedirs('reports', exist_ok=True)
-    os.makedirs('logs', exist_ok=True)
-    start_websocket()
-    app.run(port=5000)
+    if not os.path.exists('logs'):
+        os.makedirs('logs')
+    connect_to_node_server()
+    app.run(port=5000, debug=True)

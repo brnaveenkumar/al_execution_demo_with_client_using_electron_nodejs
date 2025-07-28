@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Electron App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Execution - Dependency Check</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    #status {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .status-message {
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid;
+    }
+    .success { border-color: green; color: green; }
+    .error { border-color: red; color: red; }
+    .info { border-color: blue; color: blue; }
+  </style>
 </head>
 <body>
-  <h1>Electron Test Runner</h1>
-  <p id="client-id">Waiting for client ID...</p>
-  <script src="renderer.js"></script>
+  <div id="status">
+    <h2>Dependency Check Status</h2>
+    <div id="messages"></div>
+  </div>
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    // Listen for status updates from the main process
+    ipcRenderer.on('dependency-status', (event, { message, type }) => {
+      const messagesDiv = document.getElementById('messages');
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `status-message ${type}`;
+      messageDiv.textContent = message;
+      messagesDiv.appendChild(messageDiv);
+    });
+  </script>
 </body>
 </html>

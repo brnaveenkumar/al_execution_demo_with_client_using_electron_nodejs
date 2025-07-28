@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const [selectedBrowser, setBrowser] = useState('Chrome');
+  const [selectedFramework, setFramework] = useState('Selenium');
   const [clientId, setClientId] = useState('');
   const [testResults, setTestResults] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -67,8 +68,9 @@ function App() {
         
         // Create a formatted report object with the necessary fields
         const formattedReport = {
-          timestamp: timestamp,
-          browser: 'Chrome',
+            timestamp: timestamp,
+            browser: data.report.browser,
+          framework: data.report.framework || selectedFramework,
           clientId: data.report.clientId || 'N/A',
           results: [data.report] // Wrap the report in an array for consistent rendering
         };
@@ -83,7 +85,7 @@ function App() {
   const generateClientId = () => {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
       const r = Math.random() * 16 | 0;
-      const v = c === 'x' ? r : (r & 0x3 | 0x8);
+      const v = c === 'x' ? r : ((r & 0x3) | 0x8);
       return v.toString(16);
     });
   };
@@ -99,6 +101,7 @@ function App() {
         },
         body: JSON.stringify({
           browser: selectedBrowser,
+          framework: selectedFramework,
           clientId: clientId
         }),
       });
@@ -135,6 +138,7 @@ function App() {
           const formattedResults = {
             timestamp: new Date().toISOString(),
             browser: selectedBrowser,
+            framework: selectedFramework,
             clientId: clientId,
             results: allResults,
             status: 'success'
@@ -164,6 +168,7 @@ function App() {
               <h2>Report Details</h2>
               <p><strong>Timestamp:</strong> {selectedReport.timestamp}</p>
               <p><strong>Browser:</strong> {selectedReport.browser}</p>
+              <p><strong>Framework:</strong> {selectedReport.framework}</p>
               <p><strong>Client ID:</strong> {selectedReport.clientId}</p>
               
               <h3>Test Results:</h3>
@@ -212,10 +217,21 @@ function App() {
               onChange={(e) => setBrowser(e.target.value)}
             >
               <option value="Chrome">Chrome</option>
+              <option value="Edge">Edge</option>
               <option value="Firefox">Firefox</option>
             </select>
           </div>
 
+          <div className="form-group">
+            <label>Test Framework:</label>
+            <select 
+              value={selectedFramework}
+              onChange={(e) => setFramework(e.target.value)}
+            >
+              <option value="Selenium">Selenium</option>
+              <option value="Robot">Robot</option>
+            </select>
+          </div>
           <div className="form-group">
             <label>Electron Client ID:</label>
             <input 
@@ -262,62 +278,62 @@ function App() {
             )}
           </div>
 
-        {testResults && (
-          <div className={`results ${testResults.status}`}>
-            <h2>Test Results:</h2>
-            {testResults.results ? testResults.results.map((result, index) => (
-              <div key={index} className={`test-result ${result.status}`}>
-                <h3>{result.name}</h3>
-                <p>Status: {result.status}</p>
-                {result.error && (
-                  <div className="error-message">
-                    <h4>Error:</h4>
-                    <pre>{result.error}</pre>
-                  </div>
-                )}
-                {result.output && (
-                  <div className="output">
-                    <h4>Output:</h4>
-                    <pre>{result.output}</pre>
-                  </div>
-                )}
-                {result.steps && result.steps.length > 0 && (
-                  <div className="test-steps">
-                    <h4>Test Steps:</h4>
-                    <ul>
-                      {result.steps.map((step, stepIndex) => (
-                        <li key={stepIndex} className={step.status}>
-                          {step.step} - {step.status}
-                          {step.message && <div className="step-message">{step.message}</div>}
-                        </li>
+          {testResults && (
+            <div className={`results ${testResults.status}`}>
+              <h2>Test Results:</h2>
+              {testResults.results ? testResults.results.map((result, index) => (
+                <div key={index} className={`test-result ${result.status}`}>
+                  <h3>{result.name}</h3>
+                  <p>Status: {result.status}</p>
+                  {result.error && (
+                    <div className="error-message">
+                      <h4>Error:</h4>
+                      <pre>{result.error}</pre>
+                    </div>
+                  )}
+                  {result.output && (
+                    <div className="output">
+                      <h4>Output:</h4>
+                      <pre>{result.output}</pre>
+                    </div>
+                  )}
+                  {result.steps && result.steps.length > 0 && (
+                    <div className="test-steps">
+                      <h4>Test Steps:</h4>
+                      <ul>
+                        {result.steps.map((step, stepIndex) => (
+                          <li key={stepIndex} className={step.status}>
+                            {step.step} - {step.status}
+                            {step.message && <div className="step-message">{step.message}</div>}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {result.screenshots && Object.keys(result.screenshots).length > 0 && (
+                    <div className="screenshots">
+                      <h4>Screenshots:</h4>
+                      {Object.entries(result.screenshots).map(([name, data]) => (
+                        <div key={name} className="screenshot">
+                          <h5>{name}</h5>
+                          <img src={`data:image/png;base64,${data}`} alt={`Screenshot ${name}`} />
+                        </div>
                       ))}
-                    </ul>
-                  </div>
-                )}
-                {result.screenshots && Object.keys(result.screenshots).length > 0 && (
-                  <div className="screenshots">
-                    <h4>Screenshots:</h4>
-                    {Object.entries(result.screenshots).map(([name, data]) => (
-                      <div key={name} className="screenshot">
-                        <h5>{name}</h5>
-                        <img src={`data:image/png;base64,${data}`} alt={`Screenshot ${name}`} />
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {result.screenshot && (
-                  <div className="screenshot">
-                    <h4>Screenshot:</h4>
-                    <img src={`data:image/png;base64,${result.screenshot}`} alt="Test Screenshot" />
-                  </div>
-                )}
-              </div>
-            )) : (
-              <div>Waiting for test results...</div>
-            )}
-          </div>
-        )}
-      </div>
+                    </div>
+                  )}
+                  {result.screenshot && (
+                    <div className="screenshot">
+                      <h4>Screenshot:</h4>
+                      <img src={`data:image/png;base64,${result.screenshot}`} alt="Test Screenshot" />
+                    </div>
+                  )}
+                </div>
+              )) : (
+                <div>Waiting for test results...</div>
+              )}
+            </div>
+          )}
+        </div>
       )}
     </div>
   );

@@ -48,6 +48,7 @@ lerna-debug.log*
 # IDEs and editors
 .idea/
 .vscode/
+.vs/
 *.swp
 *.swo
 .project
